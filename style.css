@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 420px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* STOP button */
+.stop-btn {
+    background: #1f4b6e;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* press effect */
+.stop-btn:active {
+    transform: scale(0.95);
+}
+
+/* grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+}
+
+/* normal buttons */
+button {
+    border: none;
+    border-radius: 6px;
+    padding: 8px 4px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* press effect */
+button:active {
+    transform: scale(0.95);
+}
+
+/* colors */
+.green  { background: #28a745; }
+.yellow { background: #ffe600; }
+.orange { background: #ff8c00; }
+.blue   { background: #2ecbff; }
+.red    { background: #e53935; color: #ffffff; }
