@@ -116,4 +116,28 @@
 <script src="script.js"></script>
 
 </body>
+    <!-- Zoom Controls HTML - paste inside your <body>, at the top -->
+<div class="zoom-controls">
+    <button onclick="zoomOut()">−</button>
+    <button onclick="zoomReset()">⊙</button>
+    <button onclick="zoomIn()">+</button>
+</div>
+
+<script>
+    let scale = 1;
+    const container = document.querySelector('.container');
+
+    function zoomIn() {
+        scale = Math.min(scale + 0.1, 2.0);
+        container.style.transform = `scale(${scale})`;
+    }
+    function zoomOut() {
+        scale = Math.max(scale - 0.1, 0.5);
+        container.style.transform = `scale(${scale})`;
+    }
+    function zoomReset() {
+        scale = 1;
+        container.style.transform = `scale(1)`;
+    }
+</script>
 </html>
